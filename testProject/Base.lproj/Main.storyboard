@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="BWR-aF-e3k">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magic-cards" translatesAutoresizingMaskIntoConstraints="NO" id="QmK-fE-kuV">
+                                <rect key="frame" x="107" y="114" width="200" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Mes-Hy-L3Z"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="***Search some magic***" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWo-Rf-5bn">
+                                <rect key="frame" x="105.5" y="488" width="203.5" height="35.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ngd-QT-2i5">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ZvD-tG-Q5v"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hT3-mc-NPA"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BWR-aF-e3k" secondAttribute="trailing" id="2MO-gt-qdp"/>
+                            <constraint firstItem="BWR-aF-e3k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6Cr-ZT-x3e"/>
+                            <constraint firstItem="KWo-Rf-5bn" firstAttribute="top" secondItem="QmK-fE-kuV" secondAttribute="bottom" constant="24" id="BI6-AN-H5C"/>
+                            <constraint firstItem="ngd-QT-2i5" firstAttribute="top" secondItem="BWR-aF-e3k" secondAttribute="bottom" id="Je9-IW-LVQ"/>
+                            <constraint firstItem="KWo-Rf-5bn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="N2L-1S-FWX"/>
+                            <constraint firstItem="BWR-aF-e3k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NWD-ic-VeX"/>
+                            <constraint firstItem="ngd-QT-2i5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TyK-Ia-JgS"/>
+                            <constraint firstItem="QmK-fE-kuV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="UET-zj-Gwb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ngd-QT-2i5" secondAttribute="bottom" id="fxS-eg-Ga2"/>
+                            <constraint firstItem="QmK-fE-kuV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ne8-Aq-xGx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ngd-QT-2i5" secondAttribute="trailing" id="qdY-Jf-q9q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="emptySateImageView" destination="QmK-fE-kuV" id="xeD-Og-UfM"/>
+                        <outlet property="emptyStateLable" destination="KWo-Rf-5bn" id="dqk-vq-Jc5"/>
+                        <outlet property="searchBar" destination="BWR-aF-e3k" id="LJD-VN-nJB"/>
+                        <outlet property="tableView" destination="ngd-QT-2i5" id="Fth-CT-Hk9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="118"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magic-cards" width="500" height="350"/>
+    </resources>
+</document>

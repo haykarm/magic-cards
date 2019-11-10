@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CardTableViewCell" customModule="testProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="227"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="flavor text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQD-Ib-bbS">
+                    <rect key="frame" x="203" y="146" width="243" height="27"/>
+                    <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card type" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7h7-yG-RVd">
+                    <rect key="frame" x="203" y="105" width="243" height="21"/>
+                    <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43s-VL-qxp">
+                    <rect key="frame" x="203" y="64" width="243" height="21"/>
+                    <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="81V-oz-tMD">
+                    <rect key="frame" x="20" y="0.0" width="159" height="207"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="159" id="8bO-ra-kZp"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="43s-VL-qxp" firstAttribute="leading" secondItem="81V-oz-tMD" secondAttribute="trailing" constant="24" id="1qh-0b-VpP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="43s-VL-qxp" secondAttribute="trailing" constant="24" id="Acu-Ss-uhH"/>
+                <constraint firstItem="81V-oz-tMD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="IPy-a3-rdy"/>
+                <constraint firstItem="OQD-Ib-bbS" firstAttribute="leading" secondItem="43s-VL-qxp" secondAttribute="leading" id="M7u-8f-rn1"/>
+                <constraint firstItem="7h7-yG-RVd" firstAttribute="leading" secondItem="43s-VL-qxp" secondAttribute="leading" id="Q5L-Yb-gBB"/>
+                <constraint firstItem="43s-VL-qxp" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="V6v-KQ-u2z"/>
+                <constraint firstItem="7h7-yG-RVd" firstAttribute="top" secondItem="43s-VL-qxp" secondAttribute="bottom" constant="20" id="Z0R-PE-asf"/>
+                <constraint firstItem="OQD-Ib-bbS" firstAttribute="trailing" secondItem="43s-VL-qxp" secondAttribute="trailing" id="anb-OQ-rIH"/>
+                <constraint firstItem="OQD-Ib-bbS" firstAttribute="top" secondItem="7h7-yG-RVd" secondAttribute="bottom" constant="20" id="bKi-9T-KkY"/>
+                <constraint firstItem="81V-oz-tMD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cBy-MX-7rg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="OQD-Ib-bbS" secondAttribute="bottom" constant="20" id="iL1-4x-BYi"/>
+                <constraint firstItem="7h7-yG-RVd" firstAttribute="trailing" secondItem="43s-VL-qxp" secondAttribute="trailing" id="sOD-aU-BCx"/>
+                <constraint firstAttribute="bottom" secondItem="81V-oz-tMD" secondAttribute="bottom" constant="20" id="zgk-ZT-m3S"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="cardImageView" destination="81V-oz-tMD" id="asF-q3-pYd"/>
+                <outlet property="flavorLabel" destination="OQD-Ib-bbS" id="G7x-Wz-a7B"/>
+                <outlet property="nameLabel" destination="43s-VL-qxp" id="PH4-Ow-F1H"/>
+                <outlet property="typeLabel" destination="7h7-yG-RVd" id="B6C-Nc-uwn"/>
+            </connections>
+            <point key="canvasLocation" x="-108.69565217391305" y="46.540178571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="placeholder" width="300" height="250"/>
+    </resources>
+</document>
